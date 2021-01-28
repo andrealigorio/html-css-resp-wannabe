@@ -72,19 +72,17 @@ img {
   clear: both;
 }
 
-@media screen and (max-width: 419px) {
-
+@media screen and (max-width: 1023px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
   .container {
     padding: 20px 10px;
   }
   .container:not(#steps) {
-    background-color: #f2f2cd;
+    background-color: #ECCBD9;
   }
   .container#steps {
     background-color: white;
@@ -93,10 +91,61 @@ img {
     width: 100%;
     margin: 0;
   }
-
+  img {
+  height: 130px;
+  }
+  #lezioni .row > .right, #lezioni .row > .left {
+    width: 47%;
+  }
+  #lezioni .row > .right {
+    float: right;
+  }
   #lezioni .row > h1 {
     padding-bottom: 20px;
   }
+  #steps .row > .left, #steps .row > .central, #steps .row > .right{
+    width: 47%;
+  }
+  #steps .row > .central {
+    float: right;
+  }
+  #steps .row > .right {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  #steps .row > h1 {
+    padding-bottom: 20px;
+  }
+  #why .row > .first, #why .row > .second, #why .row > .third {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;          SI RIPETE SOPRA
+  }
+  .container {
+    padding: 20px 10px;
+  } */
+  .container:not(#steps) {
+    background-color: #f2f2cd;
+  }
+  /* .container#steps {
+    background-color: white;      SI RIPETE SOPRA
+  } */
+  /* .row {
+    width: 100%;              SI RIPETE SOPRA
+    margin: 0;
+  } */
+
+  /* #lezioni .row > h1 {
+    padding-bottom: 20px;              SI RIPETE SOPRA
+  } */
   #lezioni .row > .left, #lezioni .row > .right {
     width: 100%;
     float: none;
@@ -110,8 +159,11 @@ img {
     padding-bottom: 20px;
   }
 
-  #why .row > .first, #why .row > .second, #why .row > .third {
-    margin-top: 0;
+  /* #why .row > .first, #why .row > .second, #why .row > .third {
+    margin-top: 0;                                                   SI RIPETE SOPRA
     padding-top: 20px;
+  } */
+  img {
+    height: 200px; /* Ho dovuto reimpostare height delle img dopo aver creato media query 1024px avendo ridotto l'altezza delle stesse a 130px; */
   }
 }
