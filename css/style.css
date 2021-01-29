@@ -146,14 +146,9 @@ img {
   /* #lezioni .row > h1 {
     padding-bottom: 20px;              SI RIPETE SOPRA
   } */
-  #lezioni .row > .left, #lezioni .row > .right {
-    width: 100%;
-    float: none;
-  }
-
+  #lezioni .row > .left, #lezioni .row > .right,
   #steps .row > .left, #steps .row > .central, #steps .row > .right {
     width: 100%;
-    float: none;
   }
   #steps .row > :not(.right) {
     padding-bottom: 20px;
@@ -163,7 +158,4 @@ img {
     margin-top: 0;                                                   SI RIPETE SOPRA
     padding-top: 20px;
   } */
-  img {
-    height: 200px; /* Ho dovuto reimpostare height delle img dopo aver creato media query 1024px avendo ridotto l'altezza delle stesse a 130px; */
-  }
 }
